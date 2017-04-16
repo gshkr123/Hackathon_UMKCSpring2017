@@ -1,0 +1,36 @@
+{
+  "id": "2667a348-816e-4356-ad6b-5531b55a9ec6",
+  "name": "doctors",
+  "isOverridable": true,
+  "entries": [
+    {
+      "value": "Orthopedist",
+      "synonyms": [
+        "knee pain",
+        "Orthopedist"
+      ]
+    },
+    {
+      "value": "Ophthalmologist",
+      "synonyms": [
+        "eye ache",
+        "Ophthalmologist"
+      ]
+    },
+    {
+      "value": "cardiologist",
+      "synonyms": [
+        "heart",
+        "cardiologist"
+      ]
+    },
+    {
+      "value": "doctors",
+      "synonyms": [
+        "doctors"
+      ]
+    }
+  ],
+  "isEnum": false,
+  "automatedExpansion": false
+}
