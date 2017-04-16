@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="english">
+<head>
+    <style>
+        body {
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-size: 100% 100%;
+
+            height: 100%;
+
+            position: absolute;
+
+            width: 100%;
+        }
+        </style>
+    <meta charset="UTF-8">
+    <title>Schedules - Patient Management System</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css" />
+</head>
+<body background="Images\13.png">
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" style=" background-color:lightgrey">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Patient Management System</a>
+            </div>
+            <div id="navbar" class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="Dashboard.html">Back to DashBoard</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <div class="row">
+        <div class="col-md-4">
+            <img src="http://jerrysusa.com/wp-content/uploads/2014/11/doctor-profile-02.jpg" style="width:250px;height:300px; border:1px solid #ccc; ">
+            <h3><i class="fa fa-user-md" aria-hidden="true"></i> Sri Sri. Dr. John Doe</h3>
+            <hr>
+            FRCS, London
+            <br>
+            <b>Rated <span class="label label-danger">#1.</span> on Yelp; can cook good food.</b>
+        </div>
+        <div class="col-md-6">
+            <i class="fa fa-calendar" aria-hidden="true"></i> Select a Date:
+            <div class="form-group">
+                <div class='input-group date' id='datetimepicker1'>
+                    <input type='text' class="form-control" />
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <th>#.</th>
+                    <th>Time slot</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1.</td>
+                        <td>10:00AM - 10:30AM</td>
+                        <td><a href="Confirm.html"><span class="label label-success">Schedule Appointment</span></a></td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td>10:40AM - 11:10AM</td>
+                        <td><span class="label label-success">Schedule Appointment</span></td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td>11:20AM - 12:50PM</td>
+                        <td><span class="label label-danger">No Availability</span></td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td>02:00PM - 02:30PM</td>
+                        <td><span class="label label-success">Schedule Appointment</span></td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td>04:00PM - 04:30PM</td>
+                        <td><span class="label label-danger">No Availability</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="bower_components/moment/min/moment.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('#datetimepicker1').datetimepicker();
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            background: url(https://www.clipartsgram.com/image/1816616707-banner2000x8001.jpg);
+            background-size:cover;
+            background-repeat:   no-repeat;
+            background-position: center center;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Dashboard - Patient Management System</title>
+    <link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="te00xt/css" href="bower_components/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default" style=" background-color:lightgrey">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Patient Management System</a>
+            </div>
+            <div id="navbar" class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html">Home</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+
+
+    <h1><i class="fa fa-heart" aria-hidden="true" style="color:red"></i> Welcome</h1>
+    <div class="row">
+        <div class="col-md-9">
+            <div class="row">
+                <div class="col-md-9">
+                    <input type="text" placeholder="Please enter your symptom here" class="form-control" id="symptom">
+                </div>
+                <div class="col-md-3">
+                    <select name="area" class="form-control">
+                        <option value="Kansas City">Kansas City</option>
+                        <option value="St. Louis">St. Louis</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <h4><i class="fa fa-user-md" aria-hidden="true"></i> Doctors who can help you</h4>
+                    <table class="table table-bordered table-striped">
+                        <thead>
+                            <th>#</th>
+                            <th>Doctor Name</th>
+                            <th>Specialization</th>
+                            <th>Action</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><a href="Schedules.html"><span class="label label-success">View Availability</span></a></td>
+                            </tr>
+                            <tr>
+                                <td>2.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><span class="label label-success">View Availability</span></td>
+                            </tr>
+                            <tr>
+                                <td>3.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><span class="label label-success">View Availability</span></td>
+                            </tr>
+                            <tr>
+                                <td>4.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><span class="label label-success">View Availability</span></td>
+                            </tr>
+                            <tr>
+                                <td>5.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><span class="label label-success">View Availability</span></td>
+                            </tr>
+                            <tr>
+                                <td>6.</td>
+                                <td>John Doe</td>
+                                <td>Specialization</td>
+                                <td><span class="label label-success">View Availability</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+</html>
